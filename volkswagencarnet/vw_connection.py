@@ -669,7 +669,7 @@ class Connection:
 
             self._session_headers["Accept"] = "application/json"
             response = await self.get(
-                url=f"https://customer-profile.apps.emea.vwapps.io/v1/customers/{subject}/realCarData", token="identity"
+                url=f"https://customer-profile.vwgroup.io/v1/customers/{subject}/realCarData", token="identity"
             )
             if response.get("realCars", {}):
                 data = {
